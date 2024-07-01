@@ -1,0 +1,78 @@
+/* Aturan CSS untuk font Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: 
+        url('/assets/fonts/gilroy-regular.ttf') format('truetype'),
+        url('/assets/fonts/Gilroy-SemiBold.ttf') format('truetype'),
+        url('/assets/fonts/gilroy-bold.ttf') format('truetype'),
+        url('/assets/fonts/gilroy-medium.ttf') format('truetype');
+}
+
+/* Aturan CSS untuk font Beaming */
+@font-face {
+    font-family: 'Beaming';
+    src: 
+        url('/assets/fonts/beaming.otf') format('opentype');
+}
+
+*{
+    font-family: 'Gilroy';
+}
+
+/* CSS UNTUK SIDEBAR ADMIN */
+.card.kolom-kiri{
+    background-color: #FA2D93;
+    overflow-y: auto;
+}
+
+.kolom-kiri {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* Pastikan nilai ini lebih tinggi dari z-index konten */
+}
+
+.kolom-kanan {
+    overflow-y: scroll; /* Aktifkan scroll vertikal pada kolom-kanan */
+    height: 100vh; /* Pastikan tinggi mencapai tinggi layar penuh */
+}
+
+.card-body p a.active {
+    font-size: 1.5rem !important;
+}
+
+
+
+
+/* Css edit profil seting admin */
+.kata-sandi{
+    background-color: #ffdee3;
+}
+
+.btn-batal{
+    color: #FFA3B2 !important;
+    background-color: #fff !important;
+}
+
+.btn-simpan{
+    color: #FFA3B2 !important;
+    background-color: #fdcbd2 !important;
+}
+
+a.profile.active,
+a.toko.active{
+    color: #FA2D93 !important;
+}
+
+
+
+/* Navbar pesanan admin */
+.navbar .nav-link.active {
+    color: #FF69B4 !important; /* Warna teks saat aktif dan !important digunkn utk mencegah aturan lain selain ini*/
+    font-weight: normal !important;
+}
+
+.navbar .nav-link:hover {
+    color: #FF69B4; /* Warna teks saat dihover */
+}

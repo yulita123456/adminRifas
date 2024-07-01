@@ -1,0 +1,57 @@
+.list-group{
+    border: none !important;
+}
+
+/* Mengatur warna latar belakang saat aktif */
+.list-group-item.active {
+    background-color: #FFA3B2 !important;
+    color: #fff !important;
+}
+
+.list-group-item:hover {
+    background-color: #ffdee3 !important;
+    color: #fff !important;
+}
+
+/* Menyembunyikan garis pada list-group */
+.list-group-item {
+    border: none !important;
+}
+
+.list-group-item.logout{
+    color: #FF69B4;
+    background-color: #ffdee3;
+}
+
+.alur-pesanan{
+    margin-bottom: 15rem;
+}
+
+.alur-pesanan a{
+    border: 1.8px solid #FA2D93;
+    color: #FA2D93;
+}
+
+.alur-pesanan a:hover{
+    background-color: #FA2D93;
+    color: #fff;
+}
+
+.alur-pesanan a.active{
+    background-color: #FA2D93;
+    color: #fff;
+}
+
+.isi-pesanan a{
+    background-color: #FA2D93;
+    color: #fff;
+}
+
+
+.isi-pesanan a:hover{
+    background-color: #f7208b;
+}
+
+.status-pesanan p:last-child{
+    color: #FA2D93;
+}

@@ -1,0 +1,53 @@
+.list-group{
+    border: none !important;
+}
+
+/* Mengatur warna latar belakang saat aktif */
+.list-group-item.active {
+    background-color: #FFA3B2 !important;
+    color: #fff !important;
+}
+
+.list-group-item:hover {
+    background-color: #ffdee3 !important;
+    color: #fff !important;
+}
+
+/* Menyembunyikan garis pada list-group */
+.list-group-item {
+    border: none !important;
+}
+
+.list-group-item.logout{
+    color: #FF69B4;
+    background-color: #ffdee3;
+}
+
+.foto-profil img{
+    margin-top: -8rem;
+}
+
+.identitas p:first-child{
+    color: #FF69B4;
+}
+
+/* css agar kolom sebelah kiri fixed dan kanan scrol */
+.kolom-kiri{
+    /* position: fixed; */
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+
+.kata-sandi{
+    background-color: #ffdee3;
+}
+
+/* css utk btn pada edit profil */
+#editProfil:hover{
+    cursor: pointer;
+}
+
+#editProfil{
+    color: #FF69B4;
+}

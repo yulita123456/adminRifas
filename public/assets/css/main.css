@@ -1,0 +1,200 @@
+/* Aturan CSS untuk font Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: 
+        url('/assets/fonts/gilroy-regular.ttf') format('truetype'),
+        url('/assets/fonts/Gilroy-SemiBold.ttf') format('truetype'),
+        url('/assets/fonts/gilroy-bold.ttf') format('truetype'),
+        url('/assets/fonts/gilroy-medium.ttf') format('truetype');
+}
+
+/* Aturan CSS untuk font Beaming */
+@font-face {
+    font-family: 'Beaming';
+    src: 
+        url('/assets/fonts/beaming.otf') format('opentype');
+}
+
+*{
+    font-family: 'Gilroy';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: #FFF0FD;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Gilroy', sans-serif;
+}
+
+/* Aturan CSS untuk navbar link */
+.navbar-nav .nav-link {
+    color: #000; /* Warna teks default */
+    text-decoration: none; /* Menghapus garis bawah default */
+}
+
+/* Aturan CSS untuk navbar link saat dihover */
+.navbar-nav .nav-link:hover {
+    color: #FF69B4; /* Warna teks saat dihover */
+}
+
+/* Aturan CSS untuk navbar link aktif */
+.navbar-nav .nav-link.active {
+    color: #FF69B4 !important; /* Warna teks saat aktif dan !important digunkn utk mencegah aturan lain selain ini*/
+}
+
+nav i{
+    color: #FF69B4;
+}
+
+
+/* kotak hitam untuk kategori produk */
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Hitam dengan opacitas 50% */
+    z-index: 0; /* Menempatkan lapisan hitam di atas gambar */
+}
+
+.black-overlay:hover{
+    background-color: rgba(0, 0, 0, 0.644); /* Hitam dengan opacitas 50% */
+}
+
+
+.dropdown-menu{
+    background-color: #FFF0FD !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:focus {
+  background-color: pink !important; /* Warna latar belakang ketika diklik */
+  color: #fff; /* Warna teks ketika diklik */
+}
+
+.tentang-kami{
+    background-color: #FFC8C6;
+    font-family: 'Gilroy';
+}
+
+.slogan{
+    transform: rotate(-8deg);
+    margin-bottom: 4rem;
+}
+
+.shadow{
+    background: linear-gradient(to bottom, #fff, #52C3C6)
+}
+
+.slogan p:first-child{
+    font-size: 3rem;
+    font-family: 'Beaming';
+    color: #FA2D93;
+}
+.slogan p:nth-child(2){
+    font-size: 1.5rem;
+    font-family: 'Beaming';
+    margin-left: 4rem;
+    color: white;
+}
+
+.kontak-kami{
+    background-color: #FA2D93;
+}
+
+.kontak-kami h1{
+    color: #FF77E9;
+}
+
+.kontak-kami button{
+    background-color: #FA2D93;
+    color: white;
+}
+
+.kontak-kami button:hover{
+    background-color: #e01f80;
+    color: white;
+}
+
+.footer{
+    background-color: #FA2D93;
+}
+
+.btn-batal{
+    color: #FFA3B2 !important;
+    background-color: #fff !important;
+}
+
+.btn-simpan{
+    color: #FFA3B2 !important;
+    background-color: #fdcbd2 !important;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+
+/* CSS UNTUK CHECKOUT */
+a.btn{
+    border: 1.8px solid #FA2D93;
+    color: #FA2D93;
+}
+a.btn:hover{
+    /* background-color: #FA2D93; */
+    color: #fff;
+}
+
+.konfirm-pesanan a{
+    border: 0;
+    color: white;
+}
+
+
+/* CSS UTK TOMBOL KERANJANG KETKA ITEM KOSONG */
+.btn-keranjang-kosong a{
+    background-color: #FA2D93;
+    color: #fff;
+}
+
+.btn-keranjang-kosong a:hover{
+    background-color: #f53997;
+    color: #fff;
+}
+
+
+
+/* Responisf kategori produk */
+@media (max-width: 768px) {
+    .menu-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 10px;
+    }
+    body {
+        overflow-x: auto;
+    }
+}
+
+/* Responsis produk */
+@media (max-width: 768px) {
+    .kumpulan-produk .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .kumpulan-produk .col-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
